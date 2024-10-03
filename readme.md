@@ -42,7 +42,9 @@ O elemento **button.slideButton** possui um evento **onClick** que aciona a fun�
 
 A função **toggleActivate( )** procura pelos elementos **button.slideButton** e pelo elemento **div.slider** e os salva nas variáveis *button* e *slider* respectivamente.
 
-Em seguida, verifica a existência da classe **off** dentro do elemento *button*. Caso ela exista, ele a remove a adiciona a classe *on* como substituta. Faz o mesmo com o elemento *slider* e finaliza a função.
+Antes de realizar a ativação ou desativação do botão propriamente dita, a função **toggleActivate( )** aguardará um tempo especificado em milissegundos na variável **loadingTime**. Esse tempo pode ser usado pelo desenvolvedor para realizar alguma ação no back-end e garantir que o estado do botão reflita o estado real da configuração à qual ele se refere.
+
+Finalizado o intervalo, verifica a existência da classe **off** dentro do elemento *button*. Caso ela exista, ele a remove a adiciona a classe *on* como substituta. Faz o mesmo com o elemento *slider* e finaliza a função.
 
 Na segunda parte da função, ele realiza a mesma operação, mas dessa vez verificando a existência da classe **on** dentro do elemento *button*.
 
@@ -54,10 +56,11 @@ Note que o padrão usado para a folha de estilos é o aninhamento, onde os eleme
 
 - button.slideButton,button.slideButton *
 - button
--- slider
--- slider.off
--- slider.on
+> slider
+> slider.off
+> slider.on
 - button.slideButton.on
+- button.slideButton.readonly,.slider.readonly
 
 As variáveis da folha de estilos são interdependentes. Para personalizar o botão, basta alterar as variáveis que possuem valores diretos, como 48px, 5px, etc. Não há necessidade de modificar as variáveis cujos valores são resultado de um cálculo usando outras variáveis.
 
