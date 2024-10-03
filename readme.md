@@ -8,9 +8,9 @@ Botão deslizante de 2 estados.
 
 1. Copie o código HTML do botão para o seu projeto:
 
- <button class="slideButton off" onClick="toggleActivate();">
+ ~~~<button class="slideButton off" onClick="toggleActivate();">
   <div class="slider off"></div>
- </button>
+ </button>~~~
 
 2. Copie o arquivo slide-button.css para a sua pasta de estilos;
 
@@ -18,11 +18,11 @@ Botão deslizante de 2 estados.
 
 4. Faça a inclusão da folha de estilo:
 
- <link rel="stylesheet" href="slide-button.css">
+ ~~~<link rel="stylesheet" href="slide-button.css">~~~
 
 5. Faça a inclusão do script de preferência no final da tag body
 
- <script src="slide-button.js"></script>
+ ~~~<script src="slide-button.js"></script>~~~
 
 ## Identificação das partes
 
