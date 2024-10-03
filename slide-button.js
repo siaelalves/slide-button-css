@@ -1,5 +1,18 @@
+/**
+ * (c) Copyright 2024, Siael Alves | Diário Code
+ */
+/**
+ * Faz o Slide Button ficar no seu estado ativado caso ele esteja desativado ou faz ele 
+ * ficar no estado desativado caso esteja ativado.
+ * @returns {void} Não retorna valor.
+ */
 function toggleActivate() {
+ /**
+  * Tempo de espera entre o clique e a ativação do botão
+  */
  let loadingTime = 500;
+ //
+ //
  let button = document.querySelector("button.slideButton");
  let slider = document.querySelector("button.slideButton div.slider");
 
