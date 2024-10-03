@@ -18,7 +18,8 @@ button.slideButton {
  --shadow-slider: -2px 0px 5px #00000040 inset;
 
  /*PALLETE*/
- --color-inactive: #c2c2c2;
+ --color-inactive: #efefef;
+ --color-readonly: #e5e5e5;
  --color-active: #11ce63;
  --color-slider: #FFFFFF;
  /*--------------*/
@@ -51,14 +52,20 @@ button.slideButton {
 
   transition:left var(--speed-slider) ease;
  }
- .slider.off {  
-  left: var(--off-position);  
- }
  .slider.on{
   left: calc(var(--on-position) - var(--width-slider));
+ }
+ .slider.off {  
+  left: var(--off-position);  
  }
 
 }
 button.slideButton.on{
  background-color:var(--color-active);
+}
+button.slideButton.off{
+ background-color:var(--color-inactive);
+}
+button.slideButton.readonly,.slider.readonly{
+ background-color:var(--color-readonly) !important;
 }
