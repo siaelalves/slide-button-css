@@ -4,6 +4,8 @@ Botão deslizante de 2 estados.
 
 ## Vídeo demonstrativo
 
+![Vídeo demonstrativo.]([https://github.com/siaelalves/slide-button-css/blob/d5a6822fc0ed8e1ebfe97e96de697f12774e611f/slide-button-view.webm])
+
 ## Como implementar em seu projeto
 
 1. Copie o código HTML do botão para o seu projeto:
@@ -32,7 +34,7 @@ Botão deslizante de 2 estados.
 
 ## Identificação das partes
 
-![Identificação das partes do projeto.](https://github.com/siaelalves/slide-button/slide-button-part-names.png) linked to [Website name](https://website.com).
+![Identificação das partes do projeto.]([https://github.com/siaelalves/slide-button/slide-button-part-names.png])
 
 ## Como funciona
 
