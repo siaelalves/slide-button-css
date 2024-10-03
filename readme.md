@@ -52,30 +52,26 @@ Na segunda parte da função, ele realiza a mesma operação, mas dessa vez veri
 
 Note que o padrão usado para a folha de estilos é o aninhamento, onde os elementos inferiores ficam aninhados nos elementos superiores. A estrutura básica é:
 
--button.slideButton,button.slideButton *
--button
---slider
---slider.off
---slider.on
--button.slideButton.on
+- button.slideButton,button.slideButton *
+- button
+-- slider
+-- slider.off
+-- slider.on
+- button.slideButton.on
 
 As variáveis da folha de estilos são interdependentes. Para personalizar o botão, basta alterar as variáveis que possuem valores diretos, como 48px, 5px, etc. Não há necessidade de modificar as variáveis cujos valores são resultado de um cálculo usando outras variáveis.
 
 A folha de estilos usa o seguinte padrão de nomenclatura.
 
-- Variáveis terminadas com "**button**"
-
-Referem-se às propriedades do espaço, ou trilha, por onde percorre o elemento mais superior. São 3 as variáveis **button**:
+- Variáveis terminadas com "**button**": *Referem-se às propriedades da trilha por onde percorre o slider. São 3 as variáveis **button***:
 
 1) height-button
 2) width-button
 3) shadow-button
 
-- Variáveis terminadas com "**slider**"
+- Variáveis terminadas com "**slider**": *Referem-se às propriedades do slider. São 7 as variáveis **slider***:
 
-Referem-se às propriedades do elemento superior que percorre sobre a trilha. São 7 as variáveis **slider**:
-
-1) width-slider.
+1) width-slider
 2) height-slider
 3) margin-slider
 4) margin-slider
@@ -85,9 +81,7 @@ Referem-se às propriedades do elemento superior que percorre sobre a trilha. S�
 8) shadow-slider
 9) color-slider
 
-- Variáveis que começam com "**color**"
-
-Dizem respeito à paleta de cores utilizadas pelo projeto. São 3 as variáveis **color**:
+- Variáveis que começam com "**color**": *Dizem respeito à paleta de cores utilizadas pelo projeto. São 3 as variáveis **color***:
 
 1) color-inactive
 2) color-active
